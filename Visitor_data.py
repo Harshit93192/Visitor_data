@@ -1,3 +1,5 @@
+''' CREATING A DATABASE OF CUSTOMERS LOOKING FOR CARS AND PROVIDING THEM REVIEWS OF VARIOUS CARS BASED ON THEIR BUDGET'''
+
 class Person:
 	''' CONTAINS THE DETAILS OF THE CUSTOMER'''
 	def __init__(self,name,age,mailid,mobile, price):
@@ -13,11 +15,7 @@ class Person:
 		detailsdict['mailid'] = self.mailid
 		detailsdict['Mobile'] = self.mobile
 		detailsdict['Budget'] =  self.price
-		if name in cdict:
-			print(cdict[self.name])
-		else:
-			cdict[self.name] = detailsdict
-			print (cdict)
+		cdict[self.name] = detailsdict
 		self.choice.method1()
 
 class Choice:
